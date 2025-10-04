@@ -27,7 +27,7 @@ setTimeout(async () => {
     });
     const createData = await createResponse.json();
     console.log(
-      "✅ Successfully fetched the health response.",
+      "✅ Successfully fetched the creation response.",
       createData.message,
       createData.data
     );
