@@ -1,5 +1,5 @@
 # Name of the workflow
-name: Build and Test
+name: build-verifier-assignment-pipeline
 
 # My Workflow get's triggered everytime I push my code into main branch
 on:
