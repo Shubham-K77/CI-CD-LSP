@@ -6,5 +6,7 @@
 - **Link of the GitHub Actions pipeline logs:** [https://github.com/Shubham-K77/CI-CD-LSP/actions/runs/18242560239](https://github.com/Shubham-K77/CI-CD-LSP/actions/runs/18242560239)
 - **Screenshot of the test file being executed:**  
   ![test file screenshot](./testLog.png)
+- **Screenshot of the docker image running on the device:**
+  ![docker file screenshot](./dockerLog.png)
 
 ---
