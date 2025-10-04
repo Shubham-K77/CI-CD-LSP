@@ -1,0 +1,17 @@
+{
+  "name": "ci-cd-lsp",
+  "version": "1.0.0",
+  "description": "Simple Hello World application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

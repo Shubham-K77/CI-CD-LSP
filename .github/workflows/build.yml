@@ -1,0 +1,49 @@
+# Name of the workflow
+name: Build and Test
+
+# My Workflow get's triggered everytime I push my code into main branch
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  # Job-1: Test Job runs the testing phase
+  test-job:
+    name: Run Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks out the repository code
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+
+      # Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Run tests
+      - name: Run tests
+        run: npm test
+
+  # Job 2: Build Job, After testing is done then build the docker image
+  build-job:
+    name: Build Docker Image
+    runs-on: ubuntu-latest
+    needs: test-job
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Build Docker image
+        run: docker build -t hello-world-app:latest .
+
+      - name: Verify Docker image
+        run: docker images | grep hello-world-app

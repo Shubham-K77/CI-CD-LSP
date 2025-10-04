@@ -1,0 +1,2 @@
+#Ignore my node_modules as the docker file will reinstall the packages again.
+node_modules
