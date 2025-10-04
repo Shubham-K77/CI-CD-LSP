@@ -2,8 +2,9 @@
 
 ---
 
-<ul>
-    <li> Link of repository: [https://github.com/Shubham-K77/CI-CD-LSP]</li>
-    <li> Link of the github actions pipeline logs: [https://github.com/Shubham-K77/CI-CD-LSP/actions/runs/18242595039] </li>
-    <li> Screenshot of the test file being executed: </li>
-</ul>
+- **Link of repository:** [https://github.com/Shubham-K77/CI-CD-LSP](https://github.com/Shubham-K77/CI-CD-LSP)
+- **Link of the GitHub Actions pipeline logs:** [https://github.com/Shubham-K77/CI-CD-LSP/actions/runs/18242560239](https://github.com/Shubham-K77/CI-CD-LSP/actions/runs/18242560239)
+- **Screenshot of the test file being executed:**  
+  ![test file screenshot](./testLog.png)
+
+---
