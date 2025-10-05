@@ -1,4 +1,4 @@
-FROM node:18-this-is-a-fake-tag
+FROM node:18-alpine
 
 WORKDIR /app
 
