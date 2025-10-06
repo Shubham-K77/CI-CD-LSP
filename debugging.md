@@ -2,7 +2,7 @@
 
 ---
 
-## **Part A: Analyze the Working Pipeline**
+## Part A: Analyze the Working Pipeline
 
 **Jobs:** Independent units of work that can run in parallel or sequentially
 
@@ -55,7 +55,7 @@
 
 ---
 
-## **Part B: The "Break and Fix" Challenge**
+## Part B: The "Break and Fix" Challenge
 
 - **Break It:** To test the robustness of the CI/CD pipeline, I intentionally introduced an error in the Dockerfile by changing the first line from FROM node:18 to FROM node:18-this-is-a-fake-tag.
 
