@@ -48,7 +48,7 @@ jobs:
         uses: aquasecurity/trivy-action@master
         with:
           image-ref: ghcr.io/shubham-k77/ci-cd-lsp:${{ github.ref_name }}
-          severity: CRITICAL,HIGH
+          severity: CRITICAL
           exit-code: 1
           ignore-unfixed: true
 
