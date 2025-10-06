@@ -59,15 +59,15 @@
 
 - **Break It:** To test the robustness of the CI/CD pipeline, I intentionally introduced an error in the Dockerfile by changing the first line from FROM node:18 to FROM node:18-this-is-a-fake-tag.
 
-- **Push and Observe:** This modification was then pushed as a pull request titled “Adding the wrong tag intentionally”. As expected, the Actions tab displayed a failure in the build-job task, confirming that the GitHub Actions workflow correctly detected the issue. ![Error Log](https://github.com/Shubham-K77/CI-CD-LSP/actions/runs/18259574856)
+- **Push and Observe:** This modification was then pushed as a pull request titled “Adding the wrong tag intentionally”. As expected, the Actions tab displayed a failure in the build-job task, confirming that the GitHub Actions workflow correctly detected the issue. ![Error Log](https://github.com/Shubham-K77/ci-cd-lsp/actions/runs/18259574856)
 
 - **Analyze:** Upon analyzing the logs, it was evident that the job failed due to the invalid Node.js tag. ![Showing the error log](./errorLog.png)
 
 - **Fix It:** After identifying the cause, I fixed the incorrect tag in the Dockerfile and re-ran the workflow. This time, the build executed successfully, indicating that the issue had been resolved. ![Successfully fixed the error](./successFixLog.png)
 
 - **The following logs show both the failed and successful builds respectively:**
-  ![Failed Log](https://github.com/Shubham-K77/CI-CD-LSP/actions/runs/18259574856)
-  ![Sucess Log](https://github.com/Shubham-K77/CI-CD-LSP/actions/runs/18259623009)
+  ![Failed Log](https://github.com/Shubham-K77/ci-cd-lsp/actions/runs/18259574856)
+  ![Sucess Log](https://github.com/Shubham-K77/ci-cd-lsp/actions/runs/18259623009)
 
 - **Explanation of the error:** To check the robustness of the CI/CD pipeline, I deliberately introduced an error in the Dockerfile. The first line, which originally read: FROM node:18 to FROM node:18-this-is-a-fake-tag
   <br />
